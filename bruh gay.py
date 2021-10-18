@@ -118,3 +118,4 @@ elif score < 0.40:
     print(bad)
     print(results.format(score))
 
+print ("Hello")
