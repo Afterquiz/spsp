@@ -48,6 +48,14 @@ wrong = """
 ██╔╝╚██╗
 ╚═╝░░╚═╝"""
 
+correct = """
+░░░░░░██░
+░░░░░██║░
+░░░░██║░░
+██░██║░░░
+╚███╔╝░░░
+░╚══╝░░░░"""
+
 resoults = """
 ██████╗░███████╗░██████╗░█████╗░██╗░░░██╗██╗░░░░░████████╗░██████╗██╗
 ██╔══██╗██╔════╝██╔════╝██╔══██╗██║░░░██║██║░░░░░╚══██╔══╝██╔════╝╚═╝
@@ -100,10 +108,12 @@ print(q1)
 status = input()
 clear()
 if status == 'yes':
+    print (str(correct))
     score = score + 1
-    print(wrong)
+    time.sleep(1)
 else:
-    print('Only accepting yes and no')
+    print(wrong)
+    time.sleep(1)
 clear()
 #results
 
@@ -117,5 +127,3 @@ elif score > 0.50:
 elif score < 0.40:
     print(bad)
     print(results.format(score))
-
-print ("Hello")
