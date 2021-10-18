@@ -36,9 +36,61 @@ enter = """
 █▀▀ █▀▄ ██▄ ▄█ ▄█   ██▄ █░▀█ ░█░ ██▄ █▀▄"""
 
 q1 = """
-─█▀▀█ █▀▀█ █▀▀ 　 █──█ █▀▀█ █──█ 　 █▀▀▀ █▀▀█ █──█ ▀█ 　 ▄ 
-░█▄▄█ █▄▄▀ █▀▀ 　 █▄▄█ █──█ █──█ 　 █─▀█ █▄▄█ █▄▄█ █▀ 　 ─ 
-░█─░█ ▀─▀▀ ▀▀▀ 　 ▄▄▄█ ▀▀▀▀ ─▀▀▀ 　 ▀▀▀▀ ▀──▀ ▄▄▄█ ▄─ 　 ▀"""
+
+█           ▄▀ █▄▄ █▀▀ ▀▄   ▄▀█ ▀█▀   █░█ █▀█ █▀▄▀█ █▀▀   █░░ ▄▀█ █▀ ▀█▀   █▄█ █▀▀ ▄▀█ █▀█ 
+█   ▄ ▄ ▄   ▀▄ █▄█ ██▄ ▄▀   █▀█ ░█░   █▀█ █▄█ █░▀░█ ██▄   █▄▄ █▀█ ▄█ ░█░   ░█░ ██▄ █▀█ █▀▄ ▄
+
+"""
+
+q2 = """
+        ▄▀ █▄▄ █▀▀ ▀▄   █▄█ █▀█ █░█   █░█ ▄▀█ █▀█ █▀█ █▄█   █░█░█ █ ▀█▀ █░█   █▄█ █▀█ █░█ █▀█   █▄░█ █▀▀ █░█░█
+▄ ▄ ▄   ▀▄ █▄█ ██▄ ▄▀   ░█░ █▄█ █▄█   █▀█ █▀█ █▀▀ █▀▀ ░█░   ▀▄▀▄▀ █ ░█░ █▀█   ░█░ █▄█ █▄█ █▀▄   █░▀█ ██▄ ▀▄▀▄▀
+
+█▄▀ █▀▀ █▄█ █▄▄ █▀█ ▄▀█ █▀█ █▀▄ ▀█
+█░█ ██▄ ░█░ █▄█ █▄█ █▀█ █▀▄ █▄▀ ░▄"""
+
+q3 = """
+█▀▀ ▄▀█ █▀█ █▀█ █░░           ▄▀ █▄░█ █▀█ ▀█▀   █▄▄ █▀▀ ▀▄   █ █▄░█   █▀ █░░ █▀█ █░█ ▄▀█ █▄▀ █ ▄▀█
+█▄▄ █▀█ █▀▄ █▄█ █▄▄   ▄ ▄ ▄   ▀▄ █░▀█ █▄█ ░█░   █▄█ ██▄ ▄▀   █ █░▀█   ▄█ █▄▄ █▄█ ▀▄▀ █▀█ █░█ █ █▀█
+
+█░░ ▄▀█ █▀ ▀█▀   █▀ █░█ █▀▄▀█ █▀▄▀█ █▀▀ █▀█ 
+█▄▄ █▀█ ▄█ ░█░   ▄█ █▄█ █░▀░█ █░▀░█ ██▄ █▀▄ ▄
+"""
+
+q4 = """
+        ▄▀ █▄▄ █▀▀ ▀▄   █▀▄▀█ █ █▀▀ █░█ ▄▀█ █▀▀ █░░   ▄▀█ █▄░█ █▀▄   █▀█ █▄█ ▄▀█ █▄░█   █▀▀ █▀█ █▀█ █▀▄
+▄ ▄ ▄   ▀▄ █▄█ ██▄ ▄▀   █░▀░█ █ █▄▄ █▀█ █▀█ ██▄ █▄▄   █▀█ █░▀█ █▄▀   █▀▄ ░█░ █▀█ █░▀█   █▄█ █▄█ █▄█ █▄▀
+
+█▀▀ █▀█ █ █▀▀ █▄░█ █▀▄ █▀ ▀█
+█▀░ █▀▄ █ ██▄ █░▀█ █▄▀ ▄█ ░▄"""
+
+q5 = """ 
+█           ▄▀ █▄▄ █▀▀ ▀▄   █▀█ █░░ ▄▀█ █▄█ █ █▄░█ █▀▀   █▀█ █▀▀   █▀▀ ▄▀█ █▀▄▀█ █▀▀ █▀
+█   ▄ ▄ ▄   ▀▄ █▄█ ██▄ ▄▀   █▀▀ █▄▄ █▀█ ░█░ █ █░▀█ █▄█   █▀▀ █▄▄   █▄█ █▀█ █░▀░█ ██▄ ▄█
+
+█▄█ █▀▀ █▀ ▀█▀ █▀▀ █▀█ █▀▄ ▄▀█ █▄█  
+░█░ ██▄ ▄█ ░█░ ██▄ █▀▄ █▄▀ █▀█ ░█░ ▄"""
+
+q6 = """
+█           ▄▀ █▄▄ █▀▀ ▀▄   █░█ █░█ █▄░█ █▀▀ █▀█ █▄█ 
+█   ▄ ▄ ▄   ▀▄ █▄█ ██▄ ▄▀   █▀█ █▄█ █░▀█ █▄█ █▀▄ ░█░ ▄"""
+
+q7 = """
+█░░ █ █▀ ▄▀█   ▄▀█ █▄░█ █▀▄   ░░█ ▄▀█ █▀▄▀█ █▀▀ █▀           ▄▀ █▄▄ █▀▀ ▀▄   ▄▀█ ▀█▀   █░█ █▀█ █▀▄▀█ █▀▀ 
+█▄▄ █ ▄█ █▀█   █▀█ █░▀█ █▄▀   █▄█ █▀█ █░▀░█ ██▄ ▄█   ▄ ▄ ▄   ▀▄ █▄█ ██▄ ▄▀   █▀█ ░█░   █▀█ █▄█ █░▀░█ ██▄ ▄"""
+
+q8 = """
+█           ▄▀ █▄░█ █▀█ ▀█▀   █▄▄ █▀▀ ▀▄   ▀█▀ █░█ █ █▄░█ █▄▀ █ █▄░█ █▀▀   ▄▀█ █▄▄ █▀█ █░█ ▀█▀   █ ▀█▀ 
+█   ▄ ▄ ▄   ▀▄ █░▀█ █▄█ ░█░   █▄█ ██▄ ▄▀   ░█░ █▀█ █ █░▀█ █░█ █ █░▀█ █▄█   █▀█ █▄█ █▄█ █▄█ ░█░   █ ░█░ ▄ """
+
+q9 = """
+
+█░█░█ █░█ █▀▀ █▀█ █▀▀           ▄▀ █▄▄ █▀▀ ▀▄   █▄█ █▀█ █░█   █▄█ █▀▀ █▀ ▀█▀ █▀▀ █▀█ █▀▄ ▄▀█ █▄█ ▀█
+▀▄▀▄▀ █▀█ ██▄ █▀▄ ██▄   ▄ ▄ ▄   ▀▄ █▄█ ██▄ ▄▀   ░█░ █▄█ █▄█   ░█░ ██▄ ▄█ ░█░ ██▄ █▀▄ █▄▀ █▀█ ░█░ ░▄"""
+
+q10 = """
+█░█░█ █▀▀           ▄▀ █▄░█ █▀█ ▀█▀   █▄▄ █▀▀ ▀▄   █ █▄░█   ▀█▀ █░█ █▀▀   █▀█ ▄▀█ █▀█ █▄▀
+▀▄▀▄▀ ██▄   ▄ ▄ ▄   ▀▄ █░▀█ █▄█ ░█░   █▄█ ██▄ ▄▀   █ █░▀█   ░█░ █▀█ ██▄   █▀▀ █▀█ █▀▄ █░█ ▄"""
 
 wrong = """
 ██╗░░██╗
@@ -57,12 +109,13 @@ correct = """
 ░╚══╝░░░░"""
 
 resoults = """
-██████╗░███████╗░██████╗░█████╗░██╗░░░██╗██╗░░░░░████████╗░██████╗██╗
-██╔══██╗██╔════╝██╔════╝██╔══██╗██║░░░██║██║░░░░░╚══██╔══╝██╔════╝╚═╝
-██████╔╝█████╗░░╚█████╗░██║░░██║██║░░░██║██║░░░░░░░░██║░░░╚█████╗░░░░
-██╔══██╗██╔══╝░░░╚═══██╗██║░░██║██║░░░██║██║░░░░░░░░██║░░░░╚═══██╗░░░
-██║░░██║███████╗██████╔╝╚█████╔╝╚██████╔╝███████╗░░░██║░░░██████╔╝██╗
-╚═╝░░╚═╝╚══════╝╚═════╝░░╚════╝░░╚═════╝░╚══════╝░░░╚═╝░░░╚═════╝░╚═╝"""
+
+██████╗░███████╗░██████╗██╗░░░██╗██╗░░░░░████████╗░██████╗  ██╗
+██╔══██╗██╔════╝██╔════╝██║░░░██║██║░░░░░╚══██╔══╝██╔════╝  ╚═╝
+██████╔╝█████╗░░╚█████╗░██║░░░██║██║░░░░░░░░██║░░░╚█████╗░  ░░░
+██╔══██╗██╔══╝░░░╚═══██╗██║░░░██║██║░░░░░░░░██║░░░░╚═══██╗  ░░░
+██║░░██║███████╗██████╔╝╚██████╔╝███████╗░░░██║░░░██████╔╝  ██╗
+╚═╝░░╚═╝╚══════╝╚═════╝░░╚═════╝░╚══════╝░░░╚═╝░░░╚═════╝░  ╚═╝"""
 
 perfect = """
 ██████╗░███████╗██████╗░███████╗███████╗░█████╗░████████╗  ░█████╗░██╗░░░██╗███████╗██████╗░
@@ -105,16 +158,158 @@ time.sleep(1)
 
 #1 Question
 print(q1)
-status = input()
+status = (input().lower())
 clear()
-if status == 'yes':
+if status == 'was':
     print (str(correct))
-    score = score + 1
+    score = score + 0.1
     time.sleep(1)
 else:
     print(wrong)
     time.sleep(1)
 clear()
+
+#2 Question
+print(q2)
+status = (input().lower())
+clear()
+if status == 'were':
+    print (str(correct))
+    score = score + 0.1
+    time.sleep(1)
+else:
+    print(wrong)
+    time.sleep(1)
+clear()
+
+#3 Question
+print(q3)
+status = (input().lower())
+clear()
+if status == "wasn't":
+    print (str(correct))
+    score = score + 0.1
+    time.sleep(1)
+elif status == "wasnt":
+    print (str(correct))
+    score = score + 0.1
+    time.sleep(1)
+elif status == "was not":
+    print (str(correct))
+    score = score + 0.1
+    time.sleep(1)
+else:
+    print(wrong)
+    time.sleep(1)
+clear()
+
+#4 Question
+print(q4)
+status = (input().lower())
+clear()
+if status == 'were':
+    print (str(correct))
+    score = score + 0.1
+    time.sleep(1)
+else:
+    print(wrong)
+    time.sleep(1)
+clear()
+
+#5 Question
+print(q5)
+status = (input().lower())
+clear()
+if status == 'was':
+    print (str(correct))
+    score = score + 0.1
+    time.sleep(1)
+else:
+    print(wrong)
+    time.sleep(1)
+clear()
+
+#6 Question
+print(q6)
+status = (input().lower())
+clear()
+if status == 'was':
+    print (str(correct))
+    score = score + 0.1
+    time.sleep(1)
+else:
+    print(wrong)
+    time.sleep(1)
+clear()
+
+#7 Question
+print(q7)
+status = (input().lower())
+clear()
+if status == 'were':
+    print (str(correct))
+    score = score + 0.1
+    time.sleep(1)
+else:
+    print(wrong)
+    time.sleep(1)
+clear()
+
+#8 Question
+print(q8)
+status = (input().lower())
+clear()
+if status == "wasn't":
+    print (str(correct))
+    score = score + 0.1
+    time.sleep(1)
+elif status == "wasnt":
+    print (str(correct))
+    score = score + 0.1
+    time.sleep(1)
+elif status == "was not":
+    print (str(correct))
+    score = score + 0.1
+    time.sleep(1)
+else:
+    print(wrong)
+    time.sleep(1)
+clear()
+
+#9 Question
+print(q9)
+status = (input().lower())
+clear()
+if status == 'were':
+    print (str(correct))
+    score = score + 0.1
+    time.sleep(1)
+else:
+    print(wrong)
+    time.sleep(1)
+clear()
+
+#10 Question
+print(q10)
+status = (input().lower())
+clear()
+if status == "weren't":
+    print (str(correct))
+    score = score + 0.1
+    time.sleep(1)
+elif status == "werent":
+    print (str(correct))
+    score = score + 0.1
+    time.sleep(1)
+elif status == "were not":
+    print (str(correct))
+    score = score + 0.1
+    time.sleep(1)
+else:
+    print(wrong)
+    time.sleep(1)
+clear()
+
 #results
 
 print(resoults)
@@ -127,3 +322,4 @@ elif score > 0.50:
 elif score < 0.40:
     print(bad)
     print(results.format(score))
+
