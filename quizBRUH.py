@@ -424,4 +424,4 @@ elif score == 0:
     print (str(s0))
     print (str(bad))
 else:
-    print = ("Ur haker boi")
+    print = ()
